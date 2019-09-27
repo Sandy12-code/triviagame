@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="outer-container row">
+        <div class="col-12">
+
+            <!-- <div class="timer">
+                        <p id="time">60</p>
+                        <h3 id="display">00:00</h3>
+                    </div> -->
+
+            <div class="col-8" id="main-container">
+
+
+                <h1>Totally Trivial Trivia!</h1>
+
+                <h2 id="display">Time Remaining: <span id ="timer"></span></h2>
+
+                <button id="startgame" class="col-3"><strong>START!</strong></button>
+
+                <!-- //add id for correct and wrong -->
+
+                <div class="questions">
+                    <li id="question1"> Q1: The Capital of Libya is Benghazi.</li>
+                    <label>
+                        <button id="V" class="btn btn-success" name="choise">True</button>
+                    </label>
+
+                    <label>
+                        <button id="F" class="btn btn-danger" name="choise">False</button>
+                    </label>
+
+
+                    <li id="question2"> Q2: Albert Einstein was awarded the Nobel Prize in Physics.</li>
+                    <label>
+                        <button id="V" class="btn btn-success" name="choise">True</button>
+                    </label>
+
+                    <label>
+                        <button id="F" class="btn btn-danger" name="choise">False</button>
+                    </label>
+
+
+                    <li id="question3"> Q3: Brazil is the only country in the America whose official language is
+                        Portuguese.</li>
+
+                    <label>
+                        <button id="V" class="btn btn-success" name="choise">True</button>
+                    </label>
+
+                    <label>
+                        <button id="F" class="btn btn-danger" name="choise">False</button>
+                    </label>
+
+
+                    <li id="question4"> Q4: No bird can fly backwards.</li>
+
+                    <label>
+                        <button id="V" class="btn btn-success" name="choise">True</button>
+                    </label>
+
+                    <label>
+                        <button id="F" class="btn btn-danger" name="choise">False</button>
+                    </label>
+
+
+                    <li id="question5"> Q5: Gone with the winds takes place in Savannah, Georgia.</li>
+
+                    <label>
+                        <button id="V" class="btn btn-success" name="choise">True</button>
+                    </label>
+
+                    <label>
+                        <button id="F" class="btn btn-danger" name="choise">False</button>
+                    </label>
+
+
+                    <li id="question6"> Q6: Paprika is the Hungarian word for pepper.</li>
+
+                    <label>
+                        <button id="V" class="btn btn-success" name="choise">True</button>
+                    </label>
+
+                    <label>
+                        <button id="F" class="btn btn-danger" name="choise">False</button>
+                    </label>
+
+
+                    <li id="question7"> Q7: Lightning never strike in the same place twice.</li>
+
+                    <label>
+                        <button id="V" class="btn btn-success" name="choise">True</button>
+                    </label>
+
+                    <label>
+                        <button id="F" class="btn btn-danger" name="choise">False</button>
+                    </label>
+
+
+                    <li id="question8"> Q8: Goldfish only have a memory of three seconds.</li>
+
+                    <label>
+                        <button id="V" class="btn btn-success" name="choise">True</button>
+                    </label>
+
+                    <label>
+                        <button id="F" class="btn btn-danger" name="choise">False</button>
+                    </label>
+
+
+                    <li id="question9"> Q9: Batman fights crime in retalition for the destruction of his planet.</li>
+
+                    <label>
+                        <button id="V" class="btn btn-success" name="choise">True</button>
+                    </label>
+
+                    <label>
+                        <button id="F" class="btn btn-danger" name="choise">False</button>
+                    </label>
+
+
+                    <li id="question10"> Q10: The first feature film produced entirely with CGI (computer-generated
+                        imagery) was Toy Story
+                    </li>
+
+                </div>
+
+                <label>
+                    <button id="V" class="btn btn-success" name="choise">True</button>
+                </label>
+
+                <label>
+                    <button id="F" class="btn btn-danger" name="choise">False</button>
+                </label>
+
+                <div class="answers">
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="end-text">
+
+        <h4 id="timeout"><u><strong><abbr title="You failed!!">TIMEOUT!</abbr></strong></u></h4>
+
+        <button id="retrybutton"><strong>Retry</strong></button>
+        <h5 id="loser" class="lead">I don't know if you are pretty ignorant or really stupid, but you missed lots of
+            correct answers. Retry blindfolded, you may have more chance to raise your score.</h5>
+        <h5 id="normal" class="lead">Good, but not enough. Try again and give the correct answer to all questions! You
+            can do it!</h5>
+        <h5 id="good" class="lead">Very good! You are smart, just like Nolan!</h5>
+    </div>
+
+
+
+</body>
+
+<!-- Javascript files needed by Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</html>

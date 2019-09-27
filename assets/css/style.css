@@ -1,0 +1,54 @@
+body {
+    background-color: wheat
+}
+
+.outer-container {
+    /* background-image: image-set("assets/images/backgroung img.jpeg"); */
+    background-color: rgb(53, 53, 82);
+    border: 1px solid gray;
+    margin-top: 20px;
+    background-image: repeating-radial-gradient(rgb(70, 70, 112), brown 10%, yellow 15%);
+}
+
+#main-container {
+    background-color: rgb(148, 91, 91);
+    color: black;
+    text-align: center;
+    border: 1px;
+    font-family: "Mountains of Christmas", cursive;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  
+}
+
+#startgame {
+    color: black;
+    text-align: center;
+    border: 1px;
+    font-family: "Mountains of Christmas", cursive;
+ 
+    
+    
+}
+
+#timeout {
+    color: red;
+    font-family: "Mountains of Christmas", cursive;
+    text-align: left;
+    font-style: bold;
+    margin-left: 45%;
+    
+   
+}
+
+#retrybutton {
+    color: white;
+    width: 15%;
+    margin-left: 40%;
+    margin-bottom: 10px;
+    font-family: "Mountains of Christmas", cursive;
+    font-style: bold;
+    background-color: black;
+
+}
