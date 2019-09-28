@@ -31,136 +31,93 @@
 
                 <h1>Totally Trivial Trivia!</h1>
 
-                <h2 id="display">Time Remaining: <span id ="timer"></span></h2>
+                <h2 id="display">Time Remaining: <span id="timer"></span></h2>
 
                 <button id="startgame" class="col-3"><strong>START!</strong></button>
 
                 <!-- //add id for correct and wrong -->
 
-                <div class="questions">
-                    <li id="question1"> Q1: The Capital of Libya is Benghazi.</li>
-                    <label>
-                        <button id="V" class="btn btn-success" name="choise">True</button>
-                    </label>
+                <div class="questions" id = "quiz">
 
-                    <label>
-                        <button id="F" class="btn btn-danger" name="choise">False</button>
-                    </label>
+                    <form action="/action_page.php">
+                        <p>Q1: The Capital of Libya is Benghazi.</p>
+                        <input type="radio" id = "quiz1" name="question1" value="true"> True
+                        <input type="radio" id = "quiz1" name="question1" value="false"> False
 
 
-                    <li id="question2"> Q2: Albert Einstein was awarded the Nobel Prize in Physics.</li>
-                    <label>
-                        <button id="V" class="btn btn-success" name="choise">True</button>
-                    </label>
 
-                    <label>
-                        <button id="F" class="btn btn-danger" name="choise">False</button>
-                    </label>
+                        <p>Q2: Albert Einstein was awarded the Nobel Prize in Physics.</p>
+
+                        <input type="radio" name="question2" value="true"> True
+                        <input type="radio" name="question2" value="false"> False
 
 
-                    <li id="question3"> Q3: Brazil is the only country in the America whose official language is
-                        Portuguese.</li>
+                        <p>Q3: Brazil is the only country in the America whose official language is
+                            Portuguese.</p>
 
-                    <label>
-                        <button id="V" class="btn btn-success" name="choise">True</button>
-                    </label>
-
-                    <label>
-                        <button id="F" class="btn btn-danger" name="choise">False</button>
-                    </label>
+                        <input type="radio" name="question3" value="true"> True
+                        <input type="radio" name="question3" value="false"> False
 
 
-                    <li id="question4"> Q4: No bird can fly backwards.</li>
+                        <p>Q4: No bird can fly backwards.</p>
 
-                    <label>
-                        <button id="V" class="btn btn-success" name="choise">True</button>
-                    </label>
-
-                    <label>
-                        <button id="F" class="btn btn-danger" name="choise">False</button>
-                    </label>
+                        <input type="radio" name="question4" value="true"> True
+                        <input type="radio" name="question4" value="false"> False
 
 
-                    <li id="question5"> Q5: Gone with the winds takes place in Savannah, Georgia.</li>
 
-                    <label>
-                        <button id="V" class="btn btn-success" name="choise">True</button>
-                    </label>
+                        <p>Q5: Gone with the winds takes place in Savannah, Georgia.</p>
 
-                    <label>
-                        <button id="F" class="btn btn-danger" name="choise">False</button>
-                    </label>
+                        <input type="radio" name="question5" value="true"> True
+                        <input type="radio" name="question5" value="false"> False
 
+                        <p>Q6: Paprika is the Hungarian word for pepper.</p>
 
-                    <li id="question6"> Q6: Paprika is the Hungarian word for pepper.</li>
-
-                    <label>
-                        <button id="V" class="btn btn-success" name="choise">True</button>
-                    </label>
-
-                    <label>
-                        <button id="F" class="btn btn-danger" name="choise">False</button>
-                    </label>
+                        <input type="radio" name="question6" value="true"> True
+                        <input type="radio" name="question6" value="false"> False
 
 
-                    <li id="question7"> Q7: Lightning never strike in the same place twice.</li>
+                        <p>Q7: Lightning never strike in the same place twice.</p>
 
-                    <label>
-                        <button id="V" class="btn btn-success" name="choise">True</button>
-                    </label>
-
-                    <label>
-                        <button id="F" class="btn btn-danger" name="choise">False</button>
-                    </label>
+                        <input type="radio" name="question7" value="true"> True
+                        <input type="radio" name="question7" value="false"> False
 
 
-                    <li id="question8"> Q8: Goldfish only have a memory of three seconds.</li>
+                        <p>Q8: Goldfish only have a memory of three seconds.</p>
 
-                    <label>
-                        <button id="V" class="btn btn-success" name="choise">True</button>
-                    </label>
-
-                    <label>
-                        <button id="F" class="btn btn-danger" name="choise">False</button>
-                    </label>
+                        <input type="radio" name="question8" value="true"> True
+                        <input type="radio" name="question8" value="false"> False
 
 
-                    <li id="question9"> Q9: Batman fights crime in retalition for the destruction of his planet.</li>
+                        <p>Q9: Batman fights crime in retalition for the destruction of his planet.</p>
 
-                    <label>
-                        <button id="V" class="btn btn-success" name="choise">True</button>
-                    </label>
-
-                    <label>
-                        <button id="F" class="btn btn-danger" name="choise">False</button>
-                    </label>
+                        <input type="radio" name="question9" value="true"> True
+                        <input type="radio" name="question9" value="false"> False
 
 
-                    <li id="question10"> Q10: The first feature film produced entirely with CGI (computer-generated
-                        imagery) was Toy Story
-                    </li>
+                        <p>Q10: The first feature film produced entirely with CGI (computer-generated
+                            imagery) was Toy Story
+                        </p>
 
-                </div>
+                        <input type="radio" name="question10" value="true"> True
+                        <input type="radio" name="question10" value="false"> False
 
-                <label>
-                    <button id="V" class="btn btn-success" name="choise">True</button>
-                </label>
+                    </form>
+                    <input id="button" type="button" value="Done!" onclick="check();">
 
-                <label>
-                    <button id="F" class="btn btn-danger" name="choise">False</button>
-                </label>
-
-                <div class="answers">
+                    <!-- <input type="submit" value="Submit"> -->
 
                 </div>
 
             </div>
+
+        </div>
+    </div>
+    <div id="after-submit">
+            <p id="number-correct">Done, good Job!</p>
         </div>
 
-
-
-    </div>
-    <div class="end-text">
+    <!-- <div class="end-text">
 
         <h4 id="timeout"><u><strong><abbr title="You failed!!">TIMEOUT!</abbr></strong></u></h4>
 
@@ -170,7 +127,7 @@
         <h5 id="normal" class="lead">Good, but not enough. Try again and give the correct answer to all questions! You
             can do it!</h5>
         <h5 id="good" class="lead">Very good! You are smart, just like Nolan!</h5>
-    </div>
+    </div> -->
 
 
 

@@ -3,10 +3,9 @@ body {
 }
 
 .outer-container {
-    /* background-image: image-set("assets/images/backgroung img.jpeg"); */
+    background-image: image-set("assets/images/backgroung img.jpeg");
     background-color: rgb(53, 53, 82);
     border: 1px solid gray;
-    margin-top: 20px;
     background-image: repeating-radial-gradient(rgb(70, 70, 112), brown 10%, yellow 15%);
 }
 
@@ -17,8 +16,8 @@ body {
     border: 1px;
     font-family: "Mountains of Christmas", cursive;
     margin: auto;
-    width: 50%;
-    padding: 10px;
+    
+    
   
 }
 
