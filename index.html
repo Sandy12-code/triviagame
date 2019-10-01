@@ -21,11 +21,6 @@
     <div class="outer-container row">
         <div class="col-12">
 
-            <!-- <div class="timer">
-                        <p id="time">60</p>
-                        <h3 id="display">00:00</h3>
-                    </div> -->
-
             <div class="col-8" id="main-container">
 
 
@@ -39,7 +34,7 @@
 
                 <div class="questions" id = "quiz">
 
-                    <form action="/action_page.php">
+                    <form action="/success.html" id="questionaire">
                         <p>Q1: The Capital of Libya is Benghazi.</p>
                         <input type="radio" id = "quiz1" name="question1" value="true"> True
                         <input type="radio" id = "quiz1" name="question1" value="false"> False
@@ -102,8 +97,9 @@
                         <input type="radio" name="question10" value="true"> True
                         <input type="radio" name="question10" value="false"> False
 
+                        <!-- <input id="button" type="button" value="Done!" onclick="check()">Î -->
+                        <input id="submit_button" type="submit" value="Submit Answers">
                     </form>
-                    <input id="button" type="button" value="Done!" onclick="check();">
 
                     <!-- <input type="submit" value="Submit"> -->
 
@@ -114,27 +110,14 @@
         </div>
     </div>
     <div id="after-submit">
-            <p id="number-correct">Done, good Job!</p>
+            <p id="number-correct"></p>
         </div>
-
-    <!-- <div class="end-text">
-
-        <h4 id="timeout"><u><strong><abbr title="You failed!!">TIMEOUT!</abbr></strong></u></h4>
-
-        <button id="retrybutton"><strong>Retry</strong></button>
-        <h5 id="loser" class="lead">I don't know if you are pretty ignorant or really stupid, but you missed lots of
-            correct answers. Retry blindfolded, you may have more chance to raise your score.</h5>
-        <h5 id="normal" class="lead">Good, but not enough. Try again and give the correct answer to all questions! You
-            can do it!</h5>
-        <h5 id="good" class="lead">Very good! You are smart, just like Nolan!</h5>
-    </div> -->
-
 
 
 </body>
 
 <!-- Javascript files needed by Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
